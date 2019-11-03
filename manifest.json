@@ -1,0 +1,23 @@
+{
+    "name": "Taber",
+    "version": "1.0",
+    "description": "set tabid in seesionStorage",
+    "permissions": ["declarativeContent", "activeTab"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*.karakal.com.cn/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "t.png",
+        "32": "t.png",
+        "48": "t.png",
+        "128": "t.png"
+    },
+    "manifest_version": 2
+}
